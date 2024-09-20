@@ -302,10 +302,12 @@
                     <h2 class="text-2xl font-semibold text-base_content mb-6 ">Select Your Seat</h2>
                     <div class="mt-6 border-t-2 border-dashed border-base_content/5">
                         <div class="w-full bg-base_200 rounded-xl p-8 mt-6">
-                            <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-base_content/10">
+                            <div
+                                class="flex items-center justify-between pb-3 border-b-2 border-dashed border-base_content/10">
                                 <span class="relative">
                                     <span class="text-base text-base_content font-medium">Seat</span>
-                                    <span class="inline-block absolute -top-2 -right-7 w-6 h-6 rounded-full text-primary_content font-medium text-center text-base bg-primary">1</span>
+                                    <span
+                                        class="inline-block absolute -top-2 -right-7 w-6 h-6 rounded-full text-primary_content font-medium text-center text-base bg-primary">1</span>
                                 </span>
                                 <span class="text-base text-base_content font-medium">Class</span>
                                 <span class="text-base text-base_content font-medium">Price</span>
@@ -329,10 +331,45 @@
                             </div>
                             <!-- coupon -->
                             <div class="mt-4 relative">
-                                <input type="text" placeholder="Have any coupon?" class="input w-full text-sm" />
-                                <button class="bg-primary rounded-lg text-primary_content text-base font-semibold px-4 py-2 absolute top-1 right-1">Apply</button>
+                                <input type="text" placeholder="Have any coupon?" class="input w-full text-sm h-14" />
+                                <button
+                                    class="bg-primary rounded-lg text-primary_content text-base font-semibold px-5 py-3 absolute top-1 right-1">Apply</button>
+                            </div>
+                            <!-- grand total -->
+                            <div class="mt-4">
+                                <div class="flex items-center justify-between mt-4">
+                                    <span class="text-base text-base_content font-medium">Grand Total</span>
+                                    <span class="text-base text-base_content font-medium">BDT <span>1100</span></span>
+                                </div>
                             </div>
                         </div>
+                        <form class="mt-6">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text text-base text-base_content font-semibold">Passenger Name*</span>
+                                </label>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered h-16" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <label class="label">
+                                    <span class="label-text text-base text-base_content font-semibold">Phone Number*</span>
+                                </label>
+                                <input type="tel" placeholder="Enter your phone number" class="input input-bordered h-16" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <label class="label">
+                                    <span class="label-text text-base text-base_content font-semibold">Email ID</span>
+                                </label>
+                                <input type="tel" placeholder="Enter your email id" class="input input-bordered h-16" />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn h-16 bg-primary rounded-2xl text-lg text-bold text-primary_content">Next</button>
+                            </div>
+                            <div class="flex justify-between mt-6 px-8">
+                                <a class="link text-base_content_secondary" href="">Terms and Conditions</a>
+                                <a class="link text-base_content_secondary" href="">Cancellation Policy</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
