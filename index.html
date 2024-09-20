@@ -8,7 +8,9 @@
     <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- tailwindcss cdn -->
@@ -18,15 +20,15 @@
             theme: {
                 extend: {
                     colors: {
-                        base_100 : "#ffffff",
-                        base_200 : "#F7F8F8",
-                        base_content : "#030712",
-                        base_content_secondary : "#03071299",
-                        primary : "#1DD100",
-                        primary_content : "#ffffff",
+                        base_100: "#ffffff",
+                        base_200: "#F7F8F8",
+                        base_content: "#030712",
+                        base_content_secondary: "#03071299",
+                        primary: "#1DD100",
+                        primary_content: "#ffffff",
                     },
                     fontFamily: {
-                       inter : ["Inter", "sans-serif"],
+                        inter: ["Inter", "sans-serif"],
                     }
                 }
             }
@@ -35,26 +37,30 @@
 </head>
 
 <body class="font-inter">
+
     <head>
 
     </head>
     <main>
-        <section class="max-w-screen-xl mx-auto bg-base_200 px-28 py-36 rounded-t-[88px] border-t-2 border-primary mt-12">
+        <section
+            class="max-w-screen-2xl mx-auto bg-base_200 px-28 py-36 rounded-t-[88px] border-t-2 border-primary mt-12">
             <!-- section header content -->
             <div class="max-w-2xl text-center mx-auto">
                 <h1 class="text-base_content font-bold text-4xl">Ticketoo</h1>
-                <p class="text-base text-base_content_secondary mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <p class="text-base text-base_content_secondary mt-6">Yes, you can run unit tests and view the results
+                    directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
             <!-- bus info -->
-             <div class="bg-base_100 px-8 rounded-3xl flex items-center gap-8 mt-12">
+            <div class="bg-base_100 px-8 rounded-3xl flex items-center gap-8 mt-12">
                 <!-- card-1 -->
-                <div class="">
+                <div class="w-3/4">
                     <div class="flex justify-between items-center">
                         <div class="flex gap-2 items-center">
                             <img class="max-w-16" src="assets/images/bus-logo.png" alt="bus logo">
                             <div>
                                 <h3 class="text-3xl font-bold text-base_content">Greenline Paribahan</h3>
-                                <p class="text-lg text-base_content text-opacity-60 mt-1">Coach-009-WEB ! AC_Business</p>
+                                <p class="text-lg text-base_content text-opacity-60 mt-1">Coach-009-WEB ! AC_Business
+                                </p>
                             </div>
                         </div>
                         <button class="bg-primary bg-primary/15 p-4 rounded-xl text-primary font-medium">
@@ -67,18 +73,25 @@
                             <span class="text-lg font-semibold text-base_content">Dhaka - Sylhet</span>
                         </div>
                         <div class="flex justify-between py-6 border-dashed border-y border-gray-300">
-                            <span class="text-lg font-semibold text-base_content_secondary text-opacity-60">Departure Time</span>
+                            <span class="text-lg font-semibold text-base_content_secondary text-opacity-60">Departure
+                                Time</span>
                             <span class="text-lg font-semibold text-base_content">9:00 PM</span>
                         </div>
                         <div class="mt-6 flex gap-6">
-                            <button class="px-4 py-5 bg-base_content/5 rounded-xl text-base font-medium text-base_content text-opacity-80">Boarding Point - Laxmipur</button>
-                            <button class="px-4 py-5 bg-base_content/5 rounded-xl text-base font-medium text-base_content text-opacity-80">Dropping Point - Bogura</button>
-                            <button class="px-4 py-5 bg-base_content/5 rounded-xl text-base font-medium text-base_content text-opacity-80">Est. Time - 11 Hour</button>
+                            <button
+                                class="px-4 py-5 bg-base_content/5 rounded-xl text-base font-medium text-base_content text-opacity-80">Boarding
+                                Point - Laxmipur</button>
+                            <button
+                                class="px-4 py-5 bg-base_content/5 rounded-xl text-base font-medium text-base_content text-opacity-80">Dropping
+                                Point - Bogura</button>
+                            <button
+                                class="px-4 py-5 bg-base_content/5 rounded-xl text-base font-medium text-base_content text-opacity-80">Est.
+                                Time - 11 Hour</button>
                         </div>
                     </div>
                 </div>
                 <!-- card-2 -->
-                <div class="">
+                <div>
                     <img src="assets/images/info-devider.png" alt="">
                 </div>
                 <!-- card-3 -->
@@ -89,7 +102,240 @@
                         <span class="text-lg font-semibold text-base_content_secondary text-opacity-60">Per Seat</span>
                     </div>
                 </div>
-             </div>
+            </div>
+
+            <!-- booking -->
+            <div class="bg-base_100 rounded-3xl p-8 mt-6 flex gap-8">
+                <!-- part-1 -->
+                <div class="w-[calc(60%+2.5rem)] pr-8 border-r-2 border-dashed border-base_content/20">
+                    <h2 class="text-2xl font-semibold text-base_content">Select Your Seat</h2>
+                    <!-- marking -->
+                    <div
+                        class="mt-6 py-4 border-y border-dashed border-base_content/20 flex justify-between itmes-center">
+                        <span class="flex gap-2">
+                            <img src="assets/images/seat-gray.png" alt="seat">
+                            <span class="text-lg font-medium text-base_content_secondary/50">Available</span>
+                        </span>
+                        <span class="flex gap-2">
+                            <img src="assets/images/seat-green-filled.png" alt="seat">
+                            <span class="text-lg font-medium text-primary">Selected</span>
+                        </span>
+                    </div>
+                    <!-- select seat -->
+                    <div class="space-y-8 mt-8">
+                        <div class="flex justify-end">
+                            <span class="w-[110px] py-4 bg-base_content/15 rounded-xl inline-block">
+                                <svg class="mx-auto" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M1.91 17.59C2.51 19.04 3.4 20.37 4.51 21.48C5.62 22.59 6.95 23.48 8.4 24.08C9.86 24.68 11.42 25 13 25C14.57 25 16.13 24.68 17.59 24.08C19.04 23.48 20.37 22.59 21.48 21.48C22.59 20.37 23.48 19.04 24.08 17.59C24.68 16.13 25 14.57 25 13C25 11.42 24.68 9.86 24.08 8.4C23.48 6.95 22.59 5.62 21.48 4.51C20.37 3.4 19.04 2.51 17.59 1.91C16.13 1.31 14.57 1 13 1C11.42 1 9.86 1.31 8.4 1.91C6.95 2.51 5.62 3.4 4.51 4.51C3.4 5.62 2.51 6.95 1.91 8.4C1.31 9.86 1 11.42 1 13C1 14.57 1.31 16.13 1.91 17.59ZM11.11 14.88C11.61 15.38 12.29 15.66 13 15.66C13.7 15.66 14.38 15.38 14.88 14.88C15.38 14.38 15.66 13.7 15.66 13C15.66 12.29 15.38 11.61 14.88 11.11C14.38 10.61 13.7 10.33 13 10.33C12.29 10.33 11.61 10.61 11.11 11.11C10.61 11.61 10.33 12.29 10.33 13C10.33 13.7 10.61 14.38 11.11 14.88ZM13 15.66L13 25M10.33 13L1.33 10.33M15.66 13L24.66 10.33"
+                                        stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000"
+                                        stroke-linejoin="round" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                        </div>
+                        <!-- A Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">A</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">A1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">A2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">A3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">A4</span>
+                            </div>
+                        </div>
+                        <!-- B Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">B</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">B1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">B2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">B3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">B4</span>
+                            </div>
+                        </div>
+                        <!-- C Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">C</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">C1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">C2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">C3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">C4</span>
+                            </div>
+                        </div>
+                        <!-- D Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">D</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">D1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">D2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">D3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">D4</span>
+                            </div>
+                        </div>
+                        <!-- E Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">E</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">E1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">E2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">E3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">E4</span>
+                            </div>
+                        </div>
+                        <!-- F Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">F</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">F1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">F2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">F3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">F4</span>
+                            </div>
+                        </div>
+                        <!-- G Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">G</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">G1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">G2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">G3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">G4</span>
+                            </div>
+                        </div>
+                        <!-- H Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">H</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">H1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">H2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">H3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">H4</span>
+                            </div>
+                        </div>
+                        <!-- I Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">I</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">I1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">I2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">I3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">I4</span>
+                            </div>
+                        </div>
+                        <!-- J Row -->
+                        <div class="flex items-center gap-[66px]">
+                            <div class="flex items-center gap-8">
+                                <span class="text-lg text-base_content_secondary/50 font-medium">J</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">J1</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">J2</span>
+                            </div>
+                            <div class="flex items-center gap-8">
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">J3</span>
+                                <span
+                                    class="seats w-[110px] text-center py-4 bg-base_content/5 rounded-xl text-lg text-base_content_secondary/50 font-medium cursor-pointer hover:bg-base_content/10">J4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- part-2 -->
+                <div class="w-full">
+                    <h2 class="text-2xl font-semibold text-base_content mb-6 ">Select Your Seat</h2>
+                    <div class="mt-6 border-t-2 border-dashed border-base_content/5">
+                        <div class="w-full bg-base_200 rounded-xl p-8 mt-6">
+                            <div class="flex items-center justify-between pb-3 border-b-2 border-dashed border-base_content/10">
+                                <span class="relative">
+                                    <span class="text-base text-base_content font-medium">Seat</span>
+                                    <span class="inline-block absolute -top-2 -right-7 w-6 h-6 rounded-full text-primary_content font-medium text-center text-base bg-primary">1</span>
+                                </span>
+                                <span class="text-base text-base_content font-medium">Class</span>
+                                <span class="text-base text-base_content font-medium">Price</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-base text-base_content_secondary/50 font-medium">Class</span>
+                                <span class="text-base text-base_content_secondary/50 font-medium">Class</span>
+                                <span class="text-base text-base_content_secondary/50 font-medium">Price</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-base text-base_content_secondary/50 font-medium">Class</span>
+                                <span class="text-base text-base_content_secondary/50 font-medium">Class</span>
+                                <span class="text-base text-base_content_secondary/50 font-medium">Price</span>
+                            </div>
+                            <!-- total -->
+                            <div class="border-t-2 border-base_content/10 mt-4">
+                                <div class="flex items-center justify-between mt-4">
+                                    <span class="text-base text-base_content font-medium">Total</span>
+                                    <span class="text-base text-base_content font-medium">BDT <span>1100</span></span>
+                                </div>
+                            </div>
+                            <!-- coupon -->
+                            <div class="mt-4 relative">
+                                <input type="text" placeholder="Have any coupon?" class="input w-full text-sm" />
+                                <button class="bg-primary rounded-lg text-primary_content text-base font-semibold px-4 py-2 absolute top-1 right-1">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
