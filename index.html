@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Bus Ticketing</title>
-    <!-- Raleway font -->
+    <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- tailwindcss cdn -->
@@ -19,10 +18,15 @@
             theme: {
                 extend: {
                     colors: {
-                        
+                        base_100 : "#ffffff",
+                        base_200 : "#F7F8F8",
+                        base_content : "#030712",
+                        base_content_secondary : "#03071299",
+                        primary : "#1DD100",
+                        primary_content : "#ffffff",
                     },
                     fontFamily: {
-                       raleway : ["Raleway", "system-ui"],
+                       inter : ["Inter", "sans-serif"],
                     }
                 }
             }
@@ -30,12 +34,20 @@
     </script>
 </head>
 
-<body class="font-raleway">
+<body class="font-inter">
     <head>
 
     </head>
     <main>
-
+        <section class="max-w-screen-xl mx-auto bg-base_200 px-28 py-36 rounded-t-[88px] border-t-2 border-primary mt-12">
+            <!-- section header content -->
+            <div class="max-w-2xl text-center mx-auto">
+                <h1 class="text-base_content font-bold text-4xl">Ticketoo</h1>
+                <p class="text-base text-base_content_secondary mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+            <!-- bus info -->
+             
+        </section>
     </main>
     <footer>
 
