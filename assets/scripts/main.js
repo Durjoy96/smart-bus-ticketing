@@ -6,17 +6,19 @@ for (let seat of seats) {
             getSeatsLeft(true); //seats left
             getSelectedSeatCount(true); //selected seat count
             getSeatStyles(event.target, true); //selected seat styles
+            seatList(event.target.innerText, true);
             let index = isClicked.indexOf(event.target.innerText); //get the index number 
             isClicked.splice(index, 1); //remove from the array
         } else {
-            isClicked.push(event.target.innerText); //push to isClicked array
-            if(getElementById("seatCount").innerText === "4") {
-                alert("Sorry! You can book 4 seats at a time");
+            if (getElementById("seatCount").innerText === "4") {
+                alert("Oops! You can only book up to 4 seats at once");
                 return;
             }; //a person can book 4 seats at a time
+            isClicked.push(event.target.innerText); //push to isClicked array
             getSeatsLeft(false); //seats left
             getSelectedSeatCount(false); //selected seat count
             getSeatStyles(event.target, false); //selected seat styles
+            seatList(event.target.innerText, false);
         };
     });
 };
@@ -52,5 +54,29 @@ function getSeatStyles(element, boolean) {
         element.classList.add("text-primary_content");
         element.classList.add("hover:bg-primary/80");
     }
+};
 
+//selected seat list
+function seatList(seatName, boolean) {
+    const seatsContainer = getElementById("selectedSeatList");
+    if (boolean !== true) {
+        seatsContainer.innerHTML += `
+            <div id="${seatName}" class="flex items-center justify-between mt-4">
+                <span class="text-base text-base_content_secondary/50 font-medium">${seatName}</span>
+                <span class="text-base text-base_content_secondary/50 font-medium">Economy</span>
+                <span class="text-base text-base_content_secondary/50 font-medium">550</span>
+             </div>
+        `;
+    } else {
+        const element = getElementById(seatName);
+        element.remove();
+    };
+
+    const msg = getElementById("noSeatSelectedMsg");
+    const length = seatsContainer.children.length;
+    if (length <= 0) {
+        msg.classList.remove("hidden");
+    } else {
+        msg.classList.add("hidden");
+    }
 };
