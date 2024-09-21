@@ -342,7 +342,7 @@
                             <div class="mt-4">
                                 <div class="flex items-center justify-between mt-4">
                                     <span class="text-base text-base_content font-medium">Grand Total</span>
-                                    <span class="text-base text-base_content font-medium">BDT <span>1100</span></span>
+                                    <span class="text-base text-base_content font-medium">BDT <span id="grandTotal">0</span></span>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                                     <span class="label-text text-base text-base_content font-semibold">Passenger
                                         Name*</span>
                                 </label>
-                                <input type="text" placeholder="Enter your name" class="input input-bordered h-16"
+                                <input id="nameInputField" type="text" placeholder="Enter your name" class="input input-bordered h-16"
                                     required />
                             </div>
                             <div class="form-control mt-6">
@@ -360,18 +360,18 @@
                                     <span class="label-text text-base text-base_content font-semibold">Phone
                                         Number*</span>
                                 </label>
-                                <input type="tel" placeholder="Enter your phone number"
+                                <input id="phnInputField" type="tel" placeholder="Enter your phone number"
                                     class="input input-bordered h-16" required />
                             </div>
                             <div class="form-control mt-6">
                                 <label class="label">
                                     <span class="label-text text-base text-base_content font-semibold">Email ID</span>
                                 </label>
-                                <input type="tel" placeholder="Enter your email id" class="input input-bordered h-16" />
+                                <input type="email" placeholder="Enter your email id" class="input input-bordered h-16" />
                             </div>
                             <div class="form-control mt-6">
-                                <button
-                                    class="btn h-16 bg-primary rounded-2xl text-lg text-bold text-primary_content">Next</button>
+                                <button id="nextBtn"
+                                    class="h-16 bg-base_content/10 rounded-2xl text-lg text-bold text-primary_content" disabled>Next</button>
                             </div>
                             <div class="flex justify-between mt-6 px-8">
                                 <a class="link text-base_content_secondary" href="">Terms and Conditions</a>
@@ -388,6 +388,7 @@
     </footer>
     <script src="assets/scripts/utilites.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src='assets/scripts/form.js'></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@ for (let seat of seats) {
             getSeatStyles(event.target, true); //selected seat styles
             seatList(event.target.innerText, true); //show selected seat list
             getTotalPrice(true); //total price
+            getGrandTotalPrice() //grand total price
 
             let index = isClicked.indexOf(event.target.innerText); //get the index number 
             isClicked.splice(index, 1); //remove from the array
@@ -23,6 +24,7 @@ for (let seat of seats) {
             getSeatStyles(event.target, false); //selected seat styles
             seatList(event.target.innerText, false); //show selected seat list
             getTotalPrice(false) //total price
+            getGrandTotalPrice() //grand total price
         };
     });
 };
@@ -135,3 +137,13 @@ function getDiscount() {
         };
     });
 };
+
+//grand total price 
+function getGrandTotalPrice() {
+    const grandTotal = getElementById("grandTotal");
+    grandTotal.innerText = getElementById("total").innerText;
+    getElementById("couponBtn").addEventListener("click", () => {
+        grandTotal.innerText -= 110;
+    });
+};
+
