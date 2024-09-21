@@ -10,6 +10,10 @@ for (let seat of seats) {
             isClicked.splice(index, 1); //remove from the array
         } else {
             isClicked.push(event.target.innerText); //push to isClicked array
+            if(getElementById("seatCount").innerText === "4") {
+                alert("Sorry! You can book 4 seats at a time");
+                return;
+            }; //a person can book 4 seats at a time
             getSeatsLeft(false); //seats left
             getSelectedSeatCount(false); //selected seat count
             getSeatStyles(event.target, false); //selected seat styles
