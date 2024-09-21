@@ -314,19 +314,29 @@
                             </div>
                             <div id="selectedSeatList">
                             </div>
-                            <p id="noSeatSelectedMsg" class="text-base font-medium text-red-500 text-center mt-4">Select your seats to proceed</p>
+                            <p id="noSeatSelectedMsg" class="text-base font-medium text-red-500 text-center mt-4">Select
+                                your seats to proceed</p>
                             <!-- total -->
                             <div class="border-t-2 border-base_content/10 mt-4">
                                 <div class="flex items-center justify-between mt-4">
                                     <span class="text-base text-base_content font-medium">Total</span>
-                                    <span class="text-base text-base_content font-medium">BDT <span id="total">0</span></span>
+                                    <span class="text-base text-base_content font-medium">BDT <span
+                                            id="total">0</span></span>
                                 </div>
                             </div>
                             <!-- coupon -->
-                            <div class="mt-4 relative">
-                                <input type="text" placeholder="Have any coupon?" class="input w-full text-sm h-14" />
-                                <button
-                                    class="bg-primary rounded-lg text-primary_content text-base font-semibold px-5 py-3 absolute top-1 right-1">Apply</button>
+                            <div id="couponContainer" class="mt-4 relative">
+                                <input id="couponCode" type="text" placeholder="Have any coupon?" class="input w-full text-sm h-14" />
+                                <button id="couponBtn"
+                                    class="bg-base_content/10 rounded-lg text-primary_content text-base font-semibold px-5 py-3 absolute top-1 right-1"
+                                    disabled>Apply</button>
+                            </div>
+                            <!-- discount amount -->
+                            <div id="discountContainer" class="mt-4 hidden">
+                                <div class="flex items-center justify-between py-4 border-y-2 border-dashed border-base_content/10">
+                                    <span class="text-base text-red-500 font-medium">Discount</span>
+                                    <span class="text-base text-red-500 font-medium">- BDT <span id="discountAmount"></span></span>
+                                </div>
                             </div>
                             <!-- grand total -->
                             <div class="mt-4">
@@ -339,15 +349,19 @@
                         <form class="mt-6">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text text-base text-base_content font-semibold">Passenger Name*</span>
+                                    <span class="label-text text-base text-base_content font-semibold">Passenger
+                                        Name*</span>
                                 </label>
-                                <input type="text" placeholder="Enter your name" class="input input-bordered h-16" required />
+                                <input type="text" placeholder="Enter your name" class="input input-bordered h-16"
+                                    required />
                             </div>
                             <div class="form-control mt-6">
                                 <label class="label">
-                                    <span class="label-text text-base text-base_content font-semibold">Phone Number*</span>
+                                    <span class="label-text text-base text-base_content font-semibold">Phone
+                                        Number*</span>
                                 </label>
-                                <input type="tel" placeholder="Enter your phone number" class="input input-bordered h-16" required />
+                                <input type="tel" placeholder="Enter your phone number"
+                                    class="input input-bordered h-16" required />
                             </div>
                             <div class="form-control mt-6">
                                 <label class="label">
@@ -356,7 +370,8 @@
                                 <input type="tel" placeholder="Enter your email id" class="input input-bordered h-16" />
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn h-16 bg-primary rounded-2xl text-lg text-bold text-primary_content">Next</button>
+                                <button
+                                    class="btn h-16 bg-primary rounded-2xl text-lg text-bold text-primary_content">Next</button>
                             </div>
                             <div class="flex justify-between mt-6 px-8">
                                 <a class="link text-base_content_secondary" href="">Terms and Conditions</a>

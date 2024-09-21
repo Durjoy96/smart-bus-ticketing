@@ -7,7 +7,7 @@ for (let seat of seats) {
             getSelectedSeatCount(true); //selected seat count
             getSeatStyles(event.target, true); //selected seat styles
             seatList(event.target.innerText, true); //show selected seat list
-            getTotalPrice(true);
+            getTotalPrice(true); //total price
 
             let index = isClicked.indexOf(event.target.innerText); //get the index number 
             isClicked.splice(index, 1); //remove from the array
@@ -22,7 +22,7 @@ for (let seat of seats) {
             getSelectedSeatCount(false); //selected seat count
             getSeatStyles(event.target, false); //selected seat styles
             seatList(event.target.innerText, false); //show selected seat list
-            getTotalPrice(false)
+            getTotalPrice(false) //total price
         };
     });
 };
@@ -34,14 +34,14 @@ function getSeatsLeft(boolean) {
     return boolean === true ? seatsLeft.innerText = num + 1 : seatsLeft.innerText = num - 1;
 };
 
-//selected seat count
+//selected seat count 
 function getSelectedSeatCount(boolean) {
     const seatCount = getElementById("seatCount");
     const num = Number(seatCount.innerText);
     return boolean === true ? seatCount.innerText = num - 1 : seatCount.innerText = num + 1;
 }
 
-//selected seat styles
+//selected seat styles 
 function getSeatStyles(element, boolean) {
     if (boolean === true) {
         element.classList.add("bg-base_content/5");
@@ -60,7 +60,7 @@ function getSeatStyles(element, boolean) {
     }
 };
 
-//show selected seat list
+//show selected seat list 
 function seatList(seatName, boolean) {
     const seatsContainer = getElementById("selectedSeatList");
     if (boolean !== true) {
@@ -78,6 +78,7 @@ function seatList(seatName, boolean) {
 
     const msg = getElementById("noSeatSelectedMsg");
     const length = seatsContainer.children.length;
+    getDiscount(length); //get discount
     if (length <= 0) {
         msg.classList.remove("hidden");
     } else {
@@ -85,7 +86,7 @@ function seatList(seatName, boolean) {
     }
 };
 
-//total price
+//total price 
 function getTotalPrice(boolean) {
     const total = getElementById("total");
     if(boolean !== true) {
@@ -93,4 +94,37 @@ function getTotalPrice(boolean) {
     } else {
         total.innerText = Number(total.innerText) - 550;
     };
+};
+
+//coupon and discount 
+function getDiscount(num) {
+    const couponContainer = getElementById("couponContainer");
+    const couponInput = document.getElementById("couponCode");
+    const couponBtn = getElementById("couponBtn");
+    const discountContainer = getElementById("discountContainer");
+    const discountAmount = getElementById("discountAmount");
+
+    if(couponBtn.hasAttribute("disabled") && num === 4) {
+        couponBtn.classList.remove("bg-base_content/10");
+        couponBtn.classList.add("bg-primary");
+        couponBtn.removeAttribute("disabled");
+    } else {
+        couponBtn.classList.remove("bg-primary");
+        couponBtn.classList.add("bg-base_content/10");
+        couponBtn.setAttribute("disabled", true);
+    }; //coupon btn styles
+
+    couponBtn.addEventListener("click", function() {
+        if(couponInput.value.toLowerCase() === "new50") {
+            couponContainer.classList.add("hidden");
+            discountContainer.classList.remove("hidden");
+
+            const total = Number(getElementById("total").innerText); //get total price
+            discountAmount.innerText = total * 5 / 100; //calculate the discount and show
+
+            for (let seat of seats) {
+                seat.classList.add("pointer-events-none")
+            } //after applied coupon code users not able to select any seat
+        };
+    });
 };
