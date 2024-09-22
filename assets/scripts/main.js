@@ -128,6 +128,9 @@ function getDiscount() {
             const total = Number(getElementById("total").innerText); //get total price
             discountAmount.innerText = total * 5 / 100; //calculate the discount and show
 
+            const grandTotal = getElementById("grandTotal");
+            grandTotal.innerText = getElementById("total").innerText - 110; //update the grand total
+
             for (let seat of seats) {
                 seat.classList.add("pointer-events-none")
             } //after applied coupon code users not able to select any seat
@@ -142,8 +145,5 @@ function getDiscount() {
 function getGrandTotalPrice() {
     const grandTotal = getElementById("grandTotal");
     grandTotal.innerText = getElementById("total").innerText;
-    getElementById("couponBtn").addEventListener("click", () => {
-        grandTotal.innerText -= 110;
-    });
 };
 
